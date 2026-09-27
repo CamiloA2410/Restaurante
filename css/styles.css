@@ -1,0 +1,116 @@
+:root {
+    --color-primario: #8B1E1E; 
+    --color-secundario: #1C1917; 
+    --color-primario-claro: #D97706; 
+    --color-claro: #ffffff; 
+    --color-fondo: #F5F5F0; 
+    --color-terciario: #E7E5E4; 
+    --color-cartas: #6B1717; 
+    --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente-principal);
+}
+
+.logo {
+    color: var(--color-terciario);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    padding: 20px 50px;
+    background-color: var(--color-primario);
+    
+}
+
+.navbar a {
+    color: beige;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: var(--color-primario-claro);
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: beige;
+}
+
+.hero h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn-primary{
+    padding: 15px 30px;
+    background-color: var(--color-primario-claro);
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    background-color: #b45309;
+    transform: translateY(-2px);
+}
+
+.servicios {
+    padding: 60px 50px;
+    background-color: var(--color-terciario);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.servicios h2{ 
+    color: var(--color-secundario);
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.grid-servicios{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    color: beige;
+}
+
+.card{
+    background: var(--color-cartas);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
