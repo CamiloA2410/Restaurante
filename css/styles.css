@@ -116,15 +116,25 @@
 }
 
 .pie{
-    background-color: var(--color-primario);
+  background-color: var(--color-primario);
 }
 
-.pie h1, h3{
-    color: white;
+.pie h1 {
+  color: white;
+  font-family: cursive;
+  margin-left: 20px;
+
 }
 
-.pie h5{
-    text-align: right;
-    color: white;
-    font-weight: bold;
+.pie h3{
+      color: white;
+  font-family: cursive;
+  margin-left: 20px;
+}
+
+.pie h5 {
+  text-align: right;
+  color: white;
+  font-weight: bold;
+  margin-left: 20px;
 }
