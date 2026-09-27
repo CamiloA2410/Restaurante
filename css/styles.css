@@ -114,3 +114,17 @@
     border-radius: 8px;
     margin-bottom: 15px;
 }
+
+.pie{
+    background-color: var(--color-primario);
+}
+
+.pie h1, h3{
+    color: white;
+}
+
+.pie h5{
+    text-align: right;
+    color: white;
+    font-weight: bold;
+}
