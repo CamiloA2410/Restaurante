@@ -4,17 +4,17 @@
 // ======================================================= 
 
 // 1. SELECCIÓN DE ELEMENTOS DEL DOM 
-// [Comentario obligatorio: Explica aquí con tus palabras qué hace getElementById y por qué le pasamos 'btn-toggle-tema'] 
+// getElementById busca un elemento por su ID y Le pasamos 'btn-toggle-tema' porque es el ID del botón que queremos seleccionar 
  const btnTema = document.getElementById('btn-toggle-tema'); 
 
-// [Comentario obligatorio: Explica por qué seleccionamos el body directamente con document.body] 
+//document.body selecciona directamente el cuerpo de la página HTML, permitiendo aplicar cambios a la página. 
 const body = document.body; 
 
-// 2. MANEJO DE EVENTOS[cite: 2] 
-// [Comentario obligatorio: Explica qué es el evento 'click' y qué papel juega la función anónima que le pasamos] 
+// 2. MANEJO DE EVENTOS 
+// Este evento detecta cuando el usuario hace clic en un elemento y La función anónima indica qué acción se ejecuta 
 btnTema.addEventListener('click', function() { 
 
-// [Comentario obligatorio: Explica qué hace exactamente el método classList.toggle('tema-oscuro')]
+// classList.toggle agrega la clase si no existe y la elimina si ya existe.
 body.classList.toggle('tema-oscuro'); 
 
 // Cambiar el texto del botón dependiendo del estado 
@@ -30,7 +30,7 @@ btnTema.textContent = "�� Modo Oscuro";
 // RETO 2: SALUDO DINÁMICO 
 // ======================================================= 
 
-// 1. SELECCIÓN DEL CONTENEDOR[cite: 2] 
+// 1. SELECCIÓN DEL CONTENEDOR
 const textoSaludo = document.getElementById('saludo-tiempo-real'); 
 
 // 2. LÓGICA DE TIEMPO 
@@ -43,9 +43,10 @@ mensaje = "¡Buenos días! Espero que tengas una excelente mañana.";
 } else if (horaActual >= 12 && horaActual < 18) { 
 mensaje = "¡Buenas tardes! Gracias por visitar mi perfil."; 
 } else { 
-mensaje = "¡Buenas noches! Descubre mi trabajo."; 
+mensaje = "¡Buenas noches! Descubre nuestro restaurante."; 
 } 
 
 // 3. INYECCIÓN EN EL DOM[cite: 2] 
-// [Comentario obligatorio: Explica la diferencia entre textContent e innerHTML y por qué usamos textContent aquí] 
+// textContent es para texto si pones una etiqueta la pone tal cual 
+// innerHTML Se puede poner etiquetas y el navegador cambia el diseño
 textoSaludo.textContent = mensaje; 
